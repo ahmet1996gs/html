@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>webserver henk</title>
+    <link rel="stylesheet" href="henky.css">
+</head>
+
+<body>
+<section id="top">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#top">parameters</a></li>
+                <li><a href="henkbestuur.html">bestuur henk</a></li>
+            </ul>
+        </nav>
+        <h1>Henk</h1>
+    </header>
+</section>
+<div id="graphDiv1"></div>
+<script src="html5-canvas-bar-graph.js"></script>
+<script>(function () {
+
+
+    function createCanvas(divName) {
+
+        var div = document.getElementById(divName);
+        var canvas = document.createElement('canvas');
+        div.appendChild(canvas);
+        if (typeof G_vmlCanvasManager != 'undefined') {
+            canvas = G_vmlCanvasManager.initElement(canvas);
+        }
+        var ctx = canvas.getContext("2d");
+        return ctx;
+    }
+
+    var ctx = createCanvas("graphDiv1");
+
+
+    var graph = new BarGraph(ctx);
+    graph.maxValue = 110;
+    graph.margin = 2;
+    graph.colors = ["#F7F390"];
+    graph.xAxisLabelArr = ["Eten", "Verveling", "W"];
+    setInterval(function () {
+        graph.update([Math.random() * 101, Math.random() * 101, Math.random() * 101]);
+    }, 1000);
+
+
+}());</script>
+</body>
+</html>
