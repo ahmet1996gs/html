@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>besturing</title>
-    <link rel="stylesheet" href="https://raw.githack.com/ahmet1996gs/html/master/henky.css">
+    <link rel="stylesheet" type="text/css" href="https://raw.githack.com/ahmet1996gs/html/master/henky.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </head>
 <body>
 <nav>
     <ul>
-        <li><a href="https://raw.githack.com/ahmet1996gs/html/master/html5-canvas-bar-graph.-test.html">parameters</a></li>
+        <li><a href="https://https://raw.githack.com/ahmet1996gs/html/master/html5-canvas-bar-graph.html">parameters</a></li>
         <li><a href="#top">bestuur henk</a></li>
     </ul>
 </nav>
-    {% for pin in pins %}
+{% for pin in pins %}
    {{ pins[pin].name }}
    {% if pins[pin].state == true %}
-      <img src="https://raw.githack.com/ahmet1996gs/html/master/links.jpg" div class="row"><img src="https://raw.githack.com/ahmet1996gs/html/master/rechts.jpg" div class="col-md-2">
+      <div class="row"><div class="col-md-2">
       <a href="/{{pin}}/off" class="btn btn-block btn-lg btn-default" role="button"></a></div></div>
    {% else %}
-      <img src="https://raw.githack.com/ahmet1996gs/html/master/links.jpg" div class="row"><img src="https://raw.githack.com/ahmet1996gs/html/master/rechts.jpg" div class="col-md-2">
+      <div class="row"><div class="col-md-2">
       <a href="/{{pin}}/on" class="btn btn-block btn-lg btn-primary" role="button"></a></div></div>
    {% endif %}
    {% endfor %}
