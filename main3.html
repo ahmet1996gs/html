@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>besturing</title>
+    <link rel="stylesheet" type="text/css" href="henky.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="https://https://raw.githack.com/ahmet1996gs/html/master/html5-canvas-bar-graph.html">parameters</a></li>
+        <li><a href="#top">bestuur henk</a></li>
+    </ul>
+</nav>
+{% for pin in pins %}
+{{ pins[pin].name }}
+{% if pins[pin].state == true %}
+<button class="row"><a href="/{{pin}}/off"></a></button><button class="col-md-2"><a href="/{{pin}}/off"></a></button>
+{% else %}
+<button class="row"><a href="/{{pin}}/on"></a></button><button class="col-md-2"><a href="/{{pin}}/on"></a></button>
+    {% endif %}
+    {% endfor %}
+</body>
+</html>
