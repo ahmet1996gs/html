@@ -43,12 +43,16 @@ nav ul li a {
 
 #row {
     position: absolute;
+    height: 100px;
+    width: 100px;
     left: 678px;
     top: 163px;
     opacity: 0.2;
 }
 #col-md-2 {
     position: absolute;
+    height: 100px;
+    width: 100px;
     left: 783px;
     top: 163px;
     opacity: 0.2;
