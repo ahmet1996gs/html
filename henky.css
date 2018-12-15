@@ -43,18 +43,16 @@ nav ul li a {
 
 .row {
     background-image: url("https://raw.githack.com/ahmet1996gs/html/master/links.jpg");
+    background-size: 100px 100px;
     position: absolute;
-    height: 100px;
-    width: 100px;
     left: 678px;
     top: 163px;
     opacity: 0.2;
 }
 .col-md-2 {
     background-image: url("https://raw.githack.com/ahmet1996gs/html/master/rechts.jpg");
+    background-size: 100px 100px;
     position: absolute;
-    height: 100px;
-    width: 100px;
     left: 783px;
     top: 163px;
     opacity: 0.2;
