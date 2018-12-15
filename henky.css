@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 .row {
-    background-image: "https://raw.githack.com/ahmet1996gs/html/master/links.jpg";
+    background-image: url("https://raw.githack.com/ahmet1996gs/html/master/links.jpg";)
     position: absolute;
     height: 100px;
     width: 100px;
@@ -51,7 +51,7 @@ nav ul li a {
     opacity: 0.2;
 }
 .col-md-2 {
-    background-image:"https://raw.githack.com/ahmet1996gs/html/master/rechts.jpg";
+    background-image: url("https://raw.githack.com/ahmet1996gs/html/master/rechts.jpg";)
     position: absolute;
     height: 100px;
     width: 100px;
