@@ -7,7 +7,7 @@ function BarGraph(ctx) {
     var endArr;
     var looping = false;
 
-    // Loop method adjusts the height of bar and redraws if neccessary
+    // Loop method adjusts the height of bar and redraws if necessary
     var loop = function () {
 
         var delta;
@@ -155,7 +155,7 @@ function BarGraph(ctx) {
 
     this.width = 300;
     this.height = 300;
-    this.maxValue;
+    this.maxValue = 0;
     this.margin = 2;
     this.curArr = [];
     this.backgroundColor = "#4A736B";
@@ -163,6 +163,7 @@ function BarGraph(ctx) {
     this.yAxisLabelArr = [];
     this.animationInterval = 100;
     this.animationSteps = 10;
+    this.colors=["#F7F390"];
 
     // Update method sets the end bar array and starts the animation
     this.update = function (newArr) {
