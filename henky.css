@@ -41,4 +41,14 @@ nav ul li a {
     padding-top: 50px;
 }
 
-
+.row{
+    background-size: 100px 100px;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    clear: both
+}
+.links{
+    height: 100px;
+    width: 100px;
+}
